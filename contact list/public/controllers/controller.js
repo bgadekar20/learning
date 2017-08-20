@@ -1,5 +1,6 @@
-function AppCtrl($scope) {
-	console.log("Hey from controller");
+var myApp = angular.module('myApp', []);
+myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
+console.log("Hello World from controller");
 
 
 p1 = {
@@ -21,5 +22,4 @@ p3 = {
 
 	var contactlist = [p1, p2, p3];
 	$scope.contactlist=contactlist;
-
-};
+}]);﻿
