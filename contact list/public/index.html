@@ -18,13 +18,15 @@ Contact List
 			<tr>
 				<th>Name</th>
 				<th>Email</th>
-				<th> Phone</th>
+				<th>Phone</th>
 			</tr>
 		</thead>
-		<tbody ng-repeat="contacts in contactList">
-		 	<tr>{{contacts.name}}</tr>
-		 	<tr>{{contacts.email}}</tr>
-		 	<tr>{{contacts.phone}}</tr>
+		<tbody >
+			<tr ng-repeat="contact in contactlist">
+		 		<td>{{contact.name}}</td>
+		 		<td>{{contact.email}}</td>
+		 		<td>{{contact.phone}}</td>
+		 </tr>
 		</tbody>
 	</table>
 </div>

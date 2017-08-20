@@ -19,7 +19,7 @@ p3 = {
 	number: '111111111'
 };
 
-var contactList = [p1,p2,p3];
-$scope.contactList=contactList;
+	var contactlist = [p1, p2, p3];
+	$scope.contactlist=contactlist;
 
 };
