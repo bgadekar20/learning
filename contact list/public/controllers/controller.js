@@ -2,24 +2,11 @@ var myApp = angular.module('myApp', []);
 myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 console.log("Hello World from controller");
 
+$http.get('/contactlist').then(function(response){
+	console.log("Got data from server");
+	console.log(response['data'])
+	$scope.contactlist = response['data'];
+});
+	
 
-p1 = {
-	name: 'Abc',
-	email: 'xyz',
-	number: '111111111'
-};
-
-p2 = {
-	name: 'def',
-	email: 'xyz',
-	number: '111111111'
-};
-p3 = {
-	name: 'ghi',
-	email: 'xyz',
-	number: '111111111'
-};
-
-	var contactlist = [p1, p2, p3];
-	$scope.contactlist=contactlist;
 }]);﻿
